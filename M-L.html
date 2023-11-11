@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Teachable Machine</title>
+    <link rel="stylesheet" href="./M-L.css">
+</head>
+<body>
+    <header>
+    <div class="navbar">
+        <nav class="nav2">
+            <h1 class="text-center"><a href="./index.html"> Virtual Pet Adoption Center</a></h1>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pet.html">Pet Profile</a></li>
+                <li><a href="./M-L.html">Teachable Machine</a></li>
+                <li><a href="./adoption.html">Adoption</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+<!-- contents -->
+    <div id="ML">Teachable Machine Image Model</div>
+
+<!-- Statement -->
+<h2>Welcome to  this part of the website</h2>
+<p class="p1">Here is a model and if you do thumbs up, it will say whether it is 100% or not</p>
+<p class="p1">If you do thumbs down , it will also show you whether it is 100% or not </p>
+<h4>Try it</h4>
+
+<!-- theachable machine -->
+<button type="button" onclick="init()">Start</button>
+<div id="webcam-container" width="50px" ></div>
+<div id="label-container"></div>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+<script src="./M-L.js"></script>
+</main>
+</body>
+</html>
